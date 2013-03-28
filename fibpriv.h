@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 1997 John-Mark Gurney.
+ * Copyright 1997, 1999-2003 John-Mark Gurney.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: fibpriv.h,v 1.9 2000/04/30 20:12:58 jmg Exp $
+ *	$Id: fibpriv.h,v 1.12 2003/01/14 10:11:30 jmg Exp $
  *
  */
 
@@ -66,6 +66,8 @@ static int fh_compare(struct fibheap *h, struct fibheap_el *a,
 			struct fibheap_el *b);
 static int fh_comparedata(struct fibheap *h, int key, void *data,
 			struct fibheap_el *b);
+static void fh_insertel(struct fibheap *h, struct fibheap_el *x);
+static void fh_deleteel(struct fibheap *h, struct fibheap_el *x);
 
 /*
  * specific node operations

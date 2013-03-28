@@ -1,3 +1,9 @@
+Version 1.1 now supports increasing the key using the fh_replace*
+functions.  Previously it would simply return NULL when you tried to
+increase the key.  It also improves performance slightly by only calling
+checkcons when we are about to use it, at extract, instead of calling it
+on every insert.
+
 I have now fixed fh_union and it properly updates the minimum.
 
 Thanks to Ryan Earl for pointing out that in fh_consolidate, it is VERY

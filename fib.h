@@ -1,5 +1,5 @@
 /*-
- * Copyright (c) 1997 John-Mark Gurney.
+ * Copyright 1997, 1998-2003 John-Mark Gurney.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	$Id: fib.h,v 1.8 2000/04/19 08:37:01 jmg Exp $
+ *	$Id: fib.h,v 1.10 2003/01/14 10:11:30 jmg Exp $
  *
  */
 

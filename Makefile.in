@@ -1,4 +1,4 @@
-#	$Id: Makefile.in,v 1.7 2000/04/30 20:16:37 jmg Exp $
+#	$Id: Makefile.in,v 1.8 2002/12/22 05:10:35 jmg Exp $
 #
 
 SHELL = /bin/sh
@@ -18,7 +18,7 @@ TESTOBJS = use.o
 
 REGRESS_PROG = fibtest fibtest2 tt
 
-DEBUG = -g
+DEBUG = -g -Wall -Werror
 #OPT = -O2
 PROFILE = -pg
 LIBOPTS = -DFH_STATS # -DNO_FREE

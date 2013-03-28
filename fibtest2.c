@@ -11,8 +11,8 @@ main(void) {
 	
 	for (i=1 ; i < 10 ; i++)
 	  {
-              arr[i]= fh_insertkey(a,0,i);
-	      printf("adding: 0 %ld \n",i);
+              arr[i]= fh_insertkey(a,0,(void *)i);
+	      printf("adding: 0 %d \n",i);
 	  }
      
 	printf(" \n");
@@ -20,11 +20,11 @@ main(void) {
          fh_replacekey(a, arr[7],-34);
   
         printf("wert(minkey) %d\n",fh_minkey(a));
-	printf("Knoten: %d\n\n", fh_extractmin(a));
+	printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	 fh_replacekey(a, arr[2],-55);
          fh_replacekey(a, arr[5],-56);
         printf("Wert(minkey) %d\n",fh_minkey(a));
-        printf("Knoten: %d\n\n", fh_extractmin(a));
+        printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	
 	 fh_replacekey(a, arr[4],-1);
          fh_replacekey(a, arr[2],-102);
@@ -32,34 +32,34 @@ main(void) {
          fh_replacekey(a, arr[9],-1);
 	 fh_replacekey(a, arr[8],-4);
         printf("Wert(minkey) %d\n",fh_minkey(a));
-        printf("Knoten: %d\n\n", fh_extractmin(a));
+        printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	 fh_replacekey(a, arr[3],-74);
          fh_replacekey(a, arr[8],-55);
 	 fh_replacekey(a, arr[4],-2);
         	
         printf("Wert(minkey) %d\n",fh_minkey(a));
-	printf("Knoten: %d\n\n", fh_extractmin(a));
+	printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	 fh_replacekey(a, arr[4],-3);
          fh_replacekey(a, arr[6],-2);
          fh_replacekey(a, arr[7],-99);
         printf("Wert(minkey) %d\n",fh_minkey(a));
-	printf("Knoten: %d\n\n", fh_extractmin(a));
+	printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	 fh_replacekey(a, arr[6],-3);
          fh_replacekey(a, arr[4],-4);
 	 fh_replacekey(a, arr[8],-94);
          fh_replacekey(a, arr[9],-2);
         printf("Wert(minkey) %d\n",fh_minkey(a));
-	printf("Knoten: %d\n\n", fh_extractmin(a));
+	printf("Knoten: %d\n\n", (int)fh_extractmin(a));
         fh_replacekey(a, arr[6],-4);
 	
         printf("Wert(minkey) %d\n",fh_minkey(a));
-	printf("Knoten: %d\n\n", fh_extractmin(a));
+	printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	
         printf("Wert(minkey) %d\n",fh_minkey(a));
-        printf("Knoten: %d\n\n", fh_extractmin(a));
+        printf("Knoten: %d\n\n", (int)fh_extractmin(a));
 	/*fh_replacekey(a, arr[9],-3);*/
         printf("Wert(minkey) %d\n",fh_minkey(a));
-	printf("Knoten: %d\n\n", fh_extractmin(a));
+	printf("Knoten: %d\n\n", (int)fh_extractmin(a));
      
         /*fh_replacekey(a, arr[9],-49);*/
  
