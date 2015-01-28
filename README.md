@@ -2,7 +2,7 @@ Fibonacci Heap
 ----
 
 This isn't _my_ code, I found it and liked it so I'm saving it here.
-It's written by John-Mark Gurney from http://resnet.uoregon.edu/~gurney_j/jmpc/
+It's written by John-Mark Gurney from https://www.funkthat.com/~jmg/jmpc/
 
 Version 1.1 now supports increasing the key using the fh_replace*
 functions.  Previously it would simply return NULL when you tried to
